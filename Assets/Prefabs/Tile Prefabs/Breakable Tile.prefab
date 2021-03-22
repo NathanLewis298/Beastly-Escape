@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 181507999593299457}
   - component: {fileID: 8318589681811465480}
   - component: {fileID: 5547907884274424123}
+  - component: {fileID: -7538666316949164529}
   m_Layer: 0
   m_Name: Breakable Tile
   m_TagString: Untagged
@@ -94,4 +95,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33948d679c2a29b4fbe8993dd0854c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 1
+  hitPoints: 2
+--- !u!95 &-7538666316949164529
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2684470107930907137}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3adeb821f03619b4a93e1cbf08520dfb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

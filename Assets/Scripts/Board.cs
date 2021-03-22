@@ -287,10 +287,14 @@ public class Board : MonoBehaviour
             }
             
             //Does a tile need to break?
-            if(breakableTiles[column, row] != null)
+            if(breakableTiles[column, row]!=null)
             {
                 //If it does give one damage
                 breakableTiles[column, row].TakeDamage(1);
+                if(breakableTiles[column, row].hitPoints <= 0)
+                {
+                    breakableTiles[column, row] = null;
+                }
                
             }
             
