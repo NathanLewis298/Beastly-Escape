@@ -221,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.028137207}
+  m_AnchoredPosition: {x: 0, y: 0.02734375}
   m_SizeDelta: {x: 0, y: 104.92238}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &69726055
@@ -323,10 +323,58 @@ MonoBehaviour:
     y: 9
     tileKind: 1
   - x: 2
+    y: 2
+    tileKind: 0
+  - x: 3
+    y: 2
+    tileKind: 0
+  - x: 4
+    y: 2
+    tileKind: 0
+  - x: 2
+    y: 3
+    tileKind: 0
+  - x: 3
+    y: 3
+    tileKind: 0
+  - x: 4
+    y: 3
+    tileKind: 0
+  - x: 2
+    y: 7
+    tileKind: 0
+  - x: 3
+    y: 7
+    tileKind: 0
+  - x: 4
+    y: 7
+    tileKind: 0
+  - x: 2
+    y: 6
+    tileKind: 0
+  - x: 3
+    y: 6
+    tileKind: 0
+  - x: 4
+    y: 6
+    tileKind: 0
+  - x: 4
     y: 5
     tileKind: 0
   - x: 3
     y: 5
+    tileKind: 0
+  - x: 2
+    y: 5
+    tileKind: 0
+  - x: 4
+    y: 4
+    tileKind: 0
+  - x: 3
+    y: 4
+    tileKind: 0
+  - x: 2
+    y: 4
     tileKind: 0
   currentDot: {fileID: 0}
 --- !u!4 &116151428
