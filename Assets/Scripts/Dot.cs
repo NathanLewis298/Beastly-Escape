@@ -13,6 +13,7 @@ public class Dot : MonoBehaviour
     public int targetY;
     public bool isMatched = false;
 
+    private HintManager hintManager;
     private FindMatches findMatches;
     private Board board;
     public GameObject otherDot;
@@ -47,6 +48,7 @@ public class Dot : MonoBehaviour
         isAdjacentBomb = false;
 
 
+        hintManager = FindObjectOfType<HintManager>();
         board = FindObjectOfType<Board>();
         findMatches = FindObjectOfType<FindMatches>();
         //targetX = (int)transform.position.x;
@@ -163,6 +165,11 @@ public class Dot : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        //Destroy the hint.
+        if(hintManager != null)
+        {
+            hintManager.DestoryHint();
+        }
         if(board.currentState == Gamestate.move)
         {
             firstTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
