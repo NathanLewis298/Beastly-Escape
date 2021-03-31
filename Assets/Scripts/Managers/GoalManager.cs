@@ -46,6 +46,8 @@ public class GoalManager : MonoBehaviour
             //Create a new Goal Panel at the GoalGameParent Position
             GameObject gameGoal = Instantiate(goalPrefab, goalGameParent.transform.position, Quaternion.identity);
             gameGoal.transform.SetParent(goalGameParent.transform);
+            gameGoal.transform.localScale = Vector3.one;
+            panel = gameGoal.GetComponent<GoalPanel>();
             panel.thisSprite = levelGoals[i].goalSprite;
             panel.thisString = "0/" + levelGoals[i].numberNeeded;
 

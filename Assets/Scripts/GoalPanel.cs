@@ -12,7 +12,7 @@ public class GoalPanel : MonoBehaviour
 
     void Start()
     {
-        
+        Setup();
     }
 
     void Setup()
