@@ -13,6 +13,7 @@ TagManager:
   - Purple Dot
   - Red Dot
   - Color
+  - Breakable
   layers:
   - Default
   - TransparentFX

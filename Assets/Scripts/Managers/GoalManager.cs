@@ -15,6 +15,7 @@ public class GoalManager : MonoBehaviour
 {
 
     public BlankGoal[] levelGoals;
+    public List<GoalPanel> currentGoals = new List<GoalPanel>();
     public GameObject goalPrefab;
     public GameObject goalIntroParent;
     public GameObject goalGameParent;
@@ -25,12 +26,12 @@ public class GoalManager : MonoBehaviour
     
     void Start()
     {
-        SetupIntroGoal();
+        SetupGoal();
 
 
     }
 
-    void SetupIntroGoal()
+    void SetupGoal()
     {
         for(int i = 0; i < levelGoals.Length; i++)
         {
@@ -48,6 +49,7 @@ public class GoalManager : MonoBehaviour
             gameGoal.transform.SetParent(goalGameParent.transform);
             gameGoal.transform.localScale = Vector3.one;
             panel = gameGoal.GetComponent<GoalPanel>();
+            currentGoals.Add(panel);
             panel.thisSprite = levelGoals[i].goalSprite;
             panel.thisString = "0/" + levelGoals[i].numberNeeded;
 
@@ -57,8 +59,37 @@ public class GoalManager : MonoBehaviour
     }
    
     
-    void Update()
+   public void UpdateGoal()
     {
-        
+        int goalsCompleted = 0;
+        for(int i = 0; i < levelGoals.Length; i++)
+        {
+            currentGoals[i].thisText.text = "" + levelGoals[i].numberCollected + "/" + levelGoals[i].numberNeeded;
+            if(levelGoals[i].numberCollected >= levelGoals[i].numberNeeded)
+            {
+                goalsCompleted++;
+                currentGoals[i].thisText.text = "" + levelGoals[i].numberNeeded + "/" + levelGoals[i].numberNeeded;
+
+            }
+        }
+   
+        if (goalsCompleted >= levelGoals.Length)
+        {
+            Debug.Log("You win!");
+        }
+    
     }
+
+
+    public void CompareGoal(string goalToCompare)
+    {
+        for (int i = 0; i < levelGoals.Length; i++)
+        {
+            if(goalToCompare == levelGoals[i].matchValue)
+            {
+                levelGoals[i].numberCollected++;
+            }
+        }
+    }
+
 }
