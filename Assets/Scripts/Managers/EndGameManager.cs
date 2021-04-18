@@ -23,14 +23,18 @@ public class EndGameManager : MonoBehaviour
 
     public GameObject movesLabel;
     public GameObject timeLabel;
+    public GameObject youWinPanel;
+    public GameObject tryAgainPanel;
     public Text counter;
     public EndGameRequirments requirements;
     public int currentCounterValue;
+    private Board board;
     private float timerSeconds;
     
     
     void Start()
     {
+        board = FindObjectOfType<Board>();
         SetupGame();  
     }
 
@@ -57,18 +61,39 @@ public class EndGameManager : MonoBehaviour
     
     public void DecreaseCounterValue()
     {
-        currentCounterValue--;
-        counter.text = "" + currentCounterValue;
-        if(currentCounterValue <= 0)
+        if(board.currentState != Gamestate.pause)
         {
-            Debug.Log("You Lose!");
-            currentCounterValue = 0;
+            currentCounterValue--;
             counter.text = "" + currentCounterValue;
+            if (currentCounterValue <= 0)
+            {
+                LoseGame();
+            }
         }
+        
      
     }
     
-    
+    public void WinGame()
+    {
+        youWinPanel.SetActive(true);
+        board.currentState = Gamestate.win;
+        currentCounterValue = 0;
+        counter.text = "" + currentCounterValue;
+        FadePanelController fade = FindObjectOfType<FadePanelController>();
+        fade.GameOver();
+    }
+
+    public void LoseGame()
+    {
+        tryAgainPanel.SetActive(true);
+        board.currentState = Gamestate.lose;
+        Debug.Log("You Lose!");
+        currentCounterValue = 0;
+        counter.text = "" + currentCounterValue;
+        FadePanelController fade = FindObjectOfType<FadePanelController>();
+        fade.GameOver();
+    }
     void Update()
     {
         if(requirements.gameType == GameType.Time && currentCounterValue > 0)
