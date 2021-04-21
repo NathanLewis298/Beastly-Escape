@@ -30,10 +30,11 @@ public class EndGameManager : MonoBehaviour
     public int currentCounterValue;
     private Board board;
     private float timerSeconds;
-    
+    private ScoreManager scoreManager;
     
     void Start()
     {
+        scoreManager = FindObjectOfType<ScoreManager>();
         board = FindObjectOfType<Board>();
         SetupGame();  
     }
@@ -82,6 +83,7 @@ public class EndGameManager : MonoBehaviour
         counter.text = "" + currentCounterValue;
         FadePanelController fade = FindObjectOfType<FadePanelController>();
         fade.GameOver();
+        scoreManager.EndScreenStars(board.scoreGoals);
     }
 
     public void LoseGame()

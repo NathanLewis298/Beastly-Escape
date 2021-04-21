@@ -327,7 +327,7 @@ public class Board : MonoBehaviour
             GameObject particle =Instantiate(destroyEffect, allDots[column, row].transform.position, Quaternion.identity);
             Destroy(particle, .5f);
             Destroy(allDots[column, row]);
-            scoreManager.IncreaseScore(basePieceValue * streakValue);
+            scoreManager.IncreaseScore(basePieceValue * streakValue, scoreGoals);
             allDots[column, row] = null;
         }
     }
@@ -641,5 +641,15 @@ public class Board : MonoBehaviour
             ShuffleBoard();
         }
     }
+
+
+
+
+
+
+
+
+
+
 
 }
