@@ -498,6 +498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44680d7210f468a428a3532588a00bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 11400000, guid: fa1da1bc3f5e8c34bb35768a3a8cf825, type: 2}
+  level: 2
   currentState: 1
   width: 7
   height: 10
@@ -517,73 +519,7 @@ MonoBehaviour:
   - {fileID: 7275562178187201295, guid: 23bce9f1bccbc774f94ef1a6060da782, type: 3}
   destroyEffect: {fileID: 4604571297930814875, guid: 5060063bc119825409132ebeedafc06a,
     type: 3}
-  boardLayout:
-  - x: 0
-    y: 0
-    tileKind: 1
-  - x: 6
-    y: 9
-    tileKind: 1
-  - x: 6
-    y: 0
-    tileKind: 1
-  - x: 0
-    y: 9
-    tileKind: 1
-  - x: 2
-    y: 2
-    tileKind: 0
-  - x: 3
-    y: 2
-    tileKind: 0
-  - x: 4
-    y: 2
-    tileKind: 0
-  - x: 2
-    y: 3
-    tileKind: 0
-  - x: 3
-    y: 3
-    tileKind: 0
-  - x: 4
-    y: 3
-    tileKind: 0
-  - x: 2
-    y: 7
-    tileKind: 0
-  - x: 3
-    y: 7
-    tileKind: 0
-  - x: 4
-    y: 7
-    tileKind: 0
-  - x: 2
-    y: 6
-    tileKind: 0
-  - x: 3
-    y: 6
-    tileKind: 0
-  - x: 4
-    y: 6
-    tileKind: 0
-  - x: 4
-    y: 5
-    tileKind: 0
-  - x: 3
-    y: 5
-    tileKind: 0
-  - x: 2
-    y: 5
-    tileKind: 0
-  - x: 4
-    y: 4
-    tileKind: 0
-  - x: 3
-    y: 4
-    tileKind: 0
-  - x: 2
-    y: 4
-    tileKind: 0
+  boardLayout: []
   currentDot: {fileID: 0}
   basePieceValue: 20
   refillDelay: 0.5
@@ -3603,7 +3539,7 @@ MonoBehaviour:
   counter: {fileID: 1729426923}
   requirements:
     gameType: 0
-    counterValue: 10000
+    counterValue: 30
   currentCounterValue: 0
 --- !u!1 &1235745134
 GameObject:
@@ -4079,7 +4015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06285714, y: 0.09200001}
   m_AnchorMax: {x: 0.9142858, y: 0.94400007}
-  m_AnchoredPosition: {x: 0.203125, y: -0.40039062}
+  m_AnchoredPosition: {x: 0.203125, y: -0.4003868}
   m_SizeDelta: {x: -0.40618896, y: 0.36820984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411495891

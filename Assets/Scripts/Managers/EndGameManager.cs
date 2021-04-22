@@ -20,7 +20,7 @@ public class EndGameRequirments
 }
 public class EndGameManager : MonoBehaviour
 {
-
+    
     public GameObject movesLabel;
     public GameObject timeLabel;
     public GameObject youWinPanel;
@@ -36,10 +36,32 @@ public class EndGameManager : MonoBehaviour
     {
         scoreManager = FindObjectOfType<ScoreManager>();
         board = FindObjectOfType<Board>();
+        SetGameType();
         SetupGame();  
     }
 
-   void SetupGame()
+   
+    void SetGameType()
+    {
+        if(board.world != null)
+        {
+            if (board.level < board.world.levels.Length)
+            {
+                if (board.world.levels[board.level] != null)
+                {
+                   requirements = board.world.levels[board.level].endGameRequirments;
+                }
+            }
+                
+            
+                
+            
+        }
+    }
+    
+    
+    
+    void SetupGame()
     {
         currentCounterValue = requirements.counterValue;
         if(requirements.gameType == GameType.Moves)

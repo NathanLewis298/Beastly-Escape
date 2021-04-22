@@ -29,14 +29,25 @@ public class TileType
 
 public class Board : MonoBehaviour
 {
+    [Header("Scriptable Object stuff")]
+    public World world;
+    public int level;
+
+
     public Gamestate currentState = Gamestate.move;
+
+    [Header("Board Dimenstions")]
     public int width;
     public int height;
     public int offSet;
+
+    [Header("Prefabs")]
     public GameObject tilePrefab;
     public GameObject breakableTilePrefab;
     public GameObject[] dots;
     public GameObject destroyEffect;
+
+    [Header("Layout")]
     public TileType[] boardLayout;
     private bool[,] blankSpaces;
     private BackgroundTile[,] breakableTiles;
@@ -50,7 +61,26 @@ public class Board : MonoBehaviour
     private GoalManager goalManager;
     public float refillDelay = 0.5f;
     public int[] scoreGoals;
-   
+
+
+    private void Awake()
+    {
+        if(world != null)
+        {
+            if (level < world.levels.Length)
+            {
+                if (world.levels[level] != null)
+                {
+                    width = world.levels[level].width;
+                    height = world.levels[level].height;
+                    dots = world.levels[level].dots;
+                    scoreGoals = world.levels[level].scoreGoals;
+                    boardLayout = world.levels[level].boardLayout;
+                }
+            }
+            
+        }
+    }
     void Start()
     {
         goalManager = FindObjectOfType<GoalManager>();
