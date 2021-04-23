@@ -31,6 +31,8 @@ public class EndGameManager : MonoBehaviour
     private Board board;
     private float timerSeconds;
     private ScoreManager scoreManager;
+
+    bool finished = false;
     
     void Start()
     {
@@ -63,6 +65,7 @@ public class EndGameManager : MonoBehaviour
     
     void SetupGame()
     {
+        finished = false;
         currentCounterValue = requirements.counterValue;
         if(requirements.gameType == GameType.Moves)
         {
@@ -99,6 +102,9 @@ public class EndGameManager : MonoBehaviour
     
     public void WinGame()
     {
+        if (finished)
+            return;
+
         youWinPanel.SetActive(true);
         board.currentState = Gamestate.win;
         currentCounterValue = 0;
@@ -106,6 +112,8 @@ public class EndGameManager : MonoBehaviour
         FadePanelController fade = FindObjectOfType<FadePanelController>();
         fade.GameOver();
         scoreManager.EndScreenStars(board.scoreGoals);
+
+        finished = true;
     }
 
     public void LoseGame()

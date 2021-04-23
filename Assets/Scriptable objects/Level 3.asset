@@ -72,13 +72,17 @@ MonoBehaviour:
   scoreGoals: e2040000d6060000ca080000
   endGameRequirments:
     gameType: 1
-    counterValue: 120
+    counterValue: 180
   levelGoals:
   - numberNeeded: 60
-    numberCollected: 44
+    numberCollected: 20
     goalSprite: {fileID: 21300000, guid: 60e5b66bebb8e9942ae9507b99e2375e, type: 3}
     matchValue: Purple Dot
   - numberNeeded: 60
-    numberCollected: 89
+    numberCollected: 21
     goalSprite: {fileID: 21300000, guid: bd3d0ac224fabcd45acef879a8524e23, type: 3}
     matchValue: Orange Dot
+  - numberNeeded: 1
+    numberCollected: 1
+    goalSprite: {fileID: 21300000, guid: e13dc82942ed9354b97ac76b184ebfe7, type: 3}
+    matchValue: Color

@@ -31,7 +31,7 @@ public class MoneyManager : MonoBehaviour
                 Money += amount;
             }
         }
-
+        Debug.Log(amount);
         return amount;
     }
 
