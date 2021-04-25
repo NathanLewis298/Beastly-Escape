@@ -18,9 +18,12 @@ public class ScoreManager : MonoBehaviour
     public Text moneyEarnedText;
     public Text totalMoney;
 
+    private GameData gameData;
+
     void Start()
     {
         board = FindObjectOfType<Board>();
+        gameData = FindObjectOfType<GameData>();
     }
 
     
@@ -33,6 +36,15 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int amountToIncrease, int []scoreGoals)
     {
         score += amountToIncrease;
+        if (gameData != null)
+        {
+            int highScore = gameData.saveData.highScores[board.level];
+            if(score > highScore)
+            {
+                gameData.saveData.highScores[board.level] = score;
+            }
+            gameData.Save();
+        }
         if(board != null && scoreBar != null)
         {
             int length = board.scoreGoals.Length;
