@@ -81,8 +81,8 @@ public class GameData : MonoBehaviour
         else
         {
             saveData = new SaveData();
-            saveData.isActive = new bool[100];
-            saveData.highScores = new int[100];
+            saveData.isActive = new bool[15];
+            saveData.highScores = new int[15];
             saveData.isActive[0] = true;
         }
     }

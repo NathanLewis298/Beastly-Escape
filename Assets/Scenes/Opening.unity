@@ -175,8 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 652276985}
   level: 5
   confirmPanel: {fileID: 1017390596}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -733,8 +733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 724834944}
   level: 1
   confirmPanel: {fileID: 1017390596}
@@ -853,7 +853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.17, y: 404.3}
+  m_AnchoredPosition: {x: 2.1700134, y: 404.3}
   m_SizeDelta: {x: -340.98193, y: -808.47455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238415230
@@ -2012,8 +2012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 930898653}
   level: 6
   confirmPanel: {fileID: 1017390596}
@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3204,8 +3204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 1874964737}
   level: 2
   confirmPanel: {fileID: 1017390596}
@@ -3282,7 +3282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4315,8 +4315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 0
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 2004206374}
   level: 4
   confirmPanel: {fileID: 1017390596}
@@ -4393,7 +4393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4707,8 +4707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  activeSprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
-  lockedSprite: {fileID: 21300000, guid: 584c3894f2c884c459771019c4a371fe, type: 3}
+  activeSprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
+  lockedSprite: {fileID: 21300000, guid: 25f93e06a979f534a851f4745e9fbf43, type: 3}
   levelText: {fileID: 122576914}
   level: 3
   confirmPanel: {fileID: 1017390596}
@@ -4785,7 +4785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9315ed84167967a439ff4221614cb32c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d56dcb3fbb135947ae1b4fadd132df5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
