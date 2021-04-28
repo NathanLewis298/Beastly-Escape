@@ -10,6 +10,9 @@ public class SaveData
 {
     public bool[] isActive;
     public int[] highScores;
+
+    public int amountOfLives;
+    
 }
 
 public class GameData : MonoBehaviour
@@ -83,6 +86,9 @@ public class GameData : MonoBehaviour
             saveData = new SaveData();
             saveData.isActive = new bool[15];
             saveData.highScores = new int[15];
+
+            
+
             saveData.isActive[0] = true;
         }
     }

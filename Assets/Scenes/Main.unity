@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   world: {fileID: 11400000, guid: fa1da1bc3f5e8c34bb35768a3a8cf825, type: 2}
-  level: 2
+  level: 0
   currentState: 1
   width: 7
   height: 10
@@ -1707,6 +1707,9 @@ MonoBehaviour:
   MusicImage: {fileID: 1569135840}
   on: {fileID: 21300000, guid: 88b37a2e9d548274dafbe2afbf8ffa64, type: 3}
   off: {fileID: 21300000, guid: 513e8b7634c437d49a15a14580b507a6, type: 3}
+  levelText1: {fileID: 476783112}
+  levelText2: {fileID: 1622763535}
+  prefix: 'Level: '
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,7 +3715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1189368254}
-        m_MethodName: LoseOK
+        m_MethodName: ActuallyNoThankYou
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

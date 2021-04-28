@@ -96,7 +96,8 @@ public class Board : MonoBehaviour
         allDots = new GameObject[width, height];
         SetUp();
         currentState = Gamestate.pause;
-    
+
+        FindObjectOfType<UiManager>().UpdateLevelText(level);
     }
 
     

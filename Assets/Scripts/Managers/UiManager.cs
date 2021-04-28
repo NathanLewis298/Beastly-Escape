@@ -10,6 +10,8 @@ public class UiManager : MonoBehaviour
 
     public Sprite on, off;
 
+    public Text levelText1, levelText2;
+    public string prefix = "Level: ";
 
     public void MuteMusic()
     {
@@ -21,6 +23,11 @@ public class UiManager : MonoBehaviour
         MusicImage.sprite = (Music.isPlaying) ? on : off;
     }
 
-
+    public void UpdateLevelText(int levelNumber)
+    {
+        levelNumber += 1; 
+        levelText1.text = prefix + levelNumber;
+        levelText2.text =  levelNumber.ToString();
+    }
   
 }

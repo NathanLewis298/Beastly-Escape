@@ -12,12 +12,19 @@ public class ConfirmPanel : MonoBehaviour
     private GameData gameData;
     private int highScore;
 
+    public Text LevelTextSetting;
+
     public Text highScoreText;
+
+    public HeartManager heartManager;
+
     void OnEnable()
     {
+        heartManager = FindObjectOfType<HeartManager>();
         gameData = FindObjectOfType<GameData>();
         LoadData();
         SetText();
+        LevelSetText();
     }
 
     void LoadData()
@@ -49,7 +56,20 @@ public class ConfirmPanel : MonoBehaviour
 
     public void Play()
     {
-        PlayerPrefs.SetInt("Current Level", level - 1);
-        SceneManager.LoadScene(levelToLoad);
+        if(heartManager.currentAmountOfHearts >= 1)
+        {
+            PlayerPrefs.SetInt("Current Level", level - 1);
+            SceneManager.LoadScene(levelToLoad);
+        }
+        
     }
+
+
+    void LevelSetText()
+    {
+        LevelTextSetting.text = level.ToString();
+    }
+
+
+
 }
