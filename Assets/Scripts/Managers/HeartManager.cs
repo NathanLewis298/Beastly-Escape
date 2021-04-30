@@ -20,7 +20,7 @@ public class HeartManager : MonoBehaviour
     public int maxHeartsAllowed = 5;
 
 
-
+    public Text mainMoneyMenu;
 
 
 
@@ -34,7 +34,7 @@ public class HeartManager : MonoBehaviour
         currentAmountOfHearts = GameData.gameData.saveData.amountOfLives;
         SetTextUILol();
 
-
+        mainMoneyMenu.text = GameData.gameData.saveData.currentMoney.ToString();
 
     }
 

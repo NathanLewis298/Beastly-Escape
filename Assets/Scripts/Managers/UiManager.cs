@@ -8,6 +8,10 @@ public class UiManager : MonoBehaviour
     public AudioSource Music;
     public Image MusicImage;
 
+
+    public Text frontMoneyMenu;
+
+
     public Sprite on, off;
 
     public Text levelText1, levelText2;
@@ -29,5 +33,13 @@ public class UiManager : MonoBehaviour
         levelText1.text = prefix + levelNumber;
         levelText2.text =  levelNumber.ToString();
     }
-  
+
+    private void Start()
+    {
+        frontMoneyMenu.text = "$" + GameData.gameData.saveData.currentMoney.ToString();
+    }
+
+
+
+
 }

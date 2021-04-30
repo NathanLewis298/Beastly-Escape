@@ -18,6 +18,11 @@ public class MoneyManager : MonoBehaviour
 
     public static int Money = 0;
 
+    private void Start()
+    {
+       Money = GameData.gameData.saveData.currentMoney;
+    }
+
     public static int AddCoins(int NumberOfStars)
     {
         int amount = 0;
@@ -29,6 +34,9 @@ public class MoneyManager : MonoBehaviour
                 amount = Random.Range(threshold.minMoney, threshold.maxMoney + 1);
 
                 Money += amount;
+
+                GameData.gameData.saveData.currentMoney = Money;
+
             }
         }
         Debug.Log(amount);

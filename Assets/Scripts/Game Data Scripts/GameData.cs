@@ -12,6 +12,7 @@ public class SaveData
     public int[] highScores;
 
     public int amountOfLives;
+    public int currentMoney;
     
 }
 

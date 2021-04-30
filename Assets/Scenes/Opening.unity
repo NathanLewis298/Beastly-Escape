@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 363447681}
   - component: {fileID: 363447683}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Money text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2630,6 +2630,7 @@ MonoBehaviour:
   currentTimer: 180
   currentAmountOfHearts: 5
   maxHeartsAllowed: 5
+  mainMoneyMenu: {fileID: 363447681}
 --- !u!1 &930898651
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,6 +3593,7 @@ MonoBehaviour:
     isActive: 010000000000000000000000000000
     highScores: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     amountOfLives: 5
+    currentMoney: 0
 --- !u!1 &1444208068
 GameObject:
   m_ObjectHideFlags: 0

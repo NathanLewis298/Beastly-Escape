@@ -1705,6 +1705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Music: {fileID: 519420030}
   MusicImage: {fileID: 1569135840}
+  frontMoneyMenu: {fileID: 1154206848}
   on: {fileID: 21300000, guid: 88b37a2e9d548274dafbe2afbf8ffa64, type: 3}
   off: {fileID: 21300000, guid: 513e8b7634c437d49a15a14580b507a6, type: 3}
   levelText1: {fileID: 476783112}
