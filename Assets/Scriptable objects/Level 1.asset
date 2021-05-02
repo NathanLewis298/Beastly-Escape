@@ -96,14 +96,14 @@ MonoBehaviour:
     counterValue: 30
   levelGoals:
   - numberNeeded: 25
-    numberCollected: 25
+    numberCollected: 3
     goalSprite: {fileID: 21300000, guid: ffc3061db0ffa1e48a05a26791793cf0, type: 3}
     matchValue: White Dot
   - numberNeeded: 15
-    numberCollected: 37
+    numberCollected: 0
     goalSprite: {fileID: 21300000, guid: 3c758524d42fc684a938581d2735ab24, type: 3}
     matchValue: Blue Dark Dot
   - numberNeeded: 18
-    numberCollected: 18
+    numberCollected: 0
     goalSprite: {fileID: 21300000, guid: addeadf756d40a94693adb2c975d7d2d, type: 3}
     matchValue: Breakable
