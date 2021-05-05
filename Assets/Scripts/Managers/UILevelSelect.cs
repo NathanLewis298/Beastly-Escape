@@ -12,7 +12,7 @@ public class UILevelSelect : MonoBehaviour
     public GameObject Page2;
 
     public GameObject shopUIMenu;
-
+    public GameObject shopOpenButton;
 
     void Start()
     {
@@ -58,12 +58,14 @@ public class UILevelSelect : MonoBehaviour
     public void OpenShop()
     {
         shopUIMenu.SetActive(true);
+        shopOpenButton.SetActive(false);
     }
 
 
     public void CloseShop()
     {
         shopUIMenu.SetActive(false);
+        shopOpenButton.SetActive(true);
     }
 
 

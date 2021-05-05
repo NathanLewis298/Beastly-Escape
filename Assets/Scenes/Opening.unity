@@ -4643,6 +4643,7 @@ MonoBehaviour:
   off: {fileID: 21300000, guid: 513e8b7634c437d49a15a14580b507a6, type: 3}
   Page2: {fileID: 142579781}
   shopUIMenu: {fileID: 546658970}
+  shopOpenButton: {fileID: 2008524548}
 --- !u!4 &691588389
 Transform:
   m_ObjectHideFlags: 0
