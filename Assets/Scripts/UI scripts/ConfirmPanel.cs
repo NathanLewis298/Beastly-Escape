@@ -18,6 +18,8 @@ public class ConfirmPanel : MonoBehaviour
 
     public HeartManager heartManager;
 
+
+    public StarManager starManager;
     void OnEnable()
     {
         heartManager = FindObjectOfType<HeartManager>();
@@ -68,6 +70,8 @@ public class ConfirmPanel : MonoBehaviour
     void LevelSetText()
     {
         LevelTextSetting.text = level.ToString();
+        starManager.index = level -1;
+        starManager.UpdateImage();
     }
 
 

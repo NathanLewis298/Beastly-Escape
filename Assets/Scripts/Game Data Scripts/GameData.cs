@@ -20,10 +20,10 @@ public class GameData : MonoBehaviour
 {
     public static GameData gameData;
     public SaveData saveData;
-   
+
+    public World world;
     
-    
-    
+    public Sprite[] starsImages;
     
     void Awake()
     {
@@ -117,5 +117,25 @@ public class GameData : MonoBehaviour
         
     }
 
+
+     public static int CalStars(int index)
+    {
+        if (index < gameData.world.levels.Length)
+        {
+
+            float highscore = gameData.saveData.highScores[index];
+            int numberofstars = 0;
+            foreach (var threshold in gameData.world.levels[index].scoreGoals)
+            {
+                if (highscore >= threshold)
+                {
+                    numberofstars++;
+                }
+            }
+            return numberofstars;
+        }
+
+        return 0;
+    }
 
 }
