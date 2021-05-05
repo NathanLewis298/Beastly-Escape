@@ -11,7 +11,7 @@ public class UILevelSelect : MonoBehaviour
 
     public GameObject Page2;
 
-
+    public GameObject shopUIMenu;
 
 
     void Start()
@@ -27,7 +27,7 @@ public class UILevelSelect : MonoBehaviour
 
     public void MuteMusic()
     {
-        Debug.Log("Work bitch");
+       
 
         if (Music.isPlaying)
             Music.Pause();
@@ -55,6 +55,19 @@ public class UILevelSelect : MonoBehaviour
         Application.Quit();
     }
 
+    public void OpenShop()
+    {
+        shopUIMenu.SetActive(true);
+    }
+
+
+    public void CloseShop()
+    {
+        shopUIMenu.SetActive(false);
+    }
 
 
 }
+
+
+
