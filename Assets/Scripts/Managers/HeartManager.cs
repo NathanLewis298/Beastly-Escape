@@ -13,7 +13,8 @@ public class HeartManager : MonoBehaviour
 
 
     // Needs to be converted into 10:00 mins
-    public float currentTimer = 5;
+    public float maxTimer = 180;
+    public float currentTimer = 180;
 
 
     public int currentAmountOfHearts = 5;
@@ -51,7 +52,7 @@ public class HeartManager : MonoBehaviour
             if (currentTimer <= 0)
             {
                 currentAmountOfHearts++;
-                currentTimer = 5;
+                currentTimer = maxTimer;
 
                 GameData.gameData.saveData.amountOfLives = currentAmountOfHearts;
             }
@@ -83,6 +84,28 @@ public class HeartManager : MonoBehaviour
             countdownTimeText.text = "Full!";
         }
 
+    }
+
+
+
+    public void LivesCount(int NumberOfHearts)
+    {
+        currentAmountOfHearts += NumberOfHearts;
+
+        GameData.gameData.saveData.amountOfLives = currentAmountOfHearts;
+        mainMoneyMenu.text = GameData.gameData.saveData.currentMoney.ToString();
+        SetTextUILol();
+    }
+
+
+    public void UpdateTimer(float timerDecrease)
+    {
+        maxTimer -= timerDecrease;
+        Debug.Log(maxTimer);
+        if (currentTimer > maxTimer)
+            currentTimer = maxTimer;
+
+        mainMoneyMenu.text = GameData.gameData.saveData.currentMoney.ToString();
     }
 
 

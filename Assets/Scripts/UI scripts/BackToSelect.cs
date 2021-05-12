@@ -12,8 +12,17 @@ public class BackToSelect : MonoBehaviour
     private GameData gameData;
     private Board board;
     private HeartManager heartManager;
+    public EndGameManager endgameManager;
     
+    void start()
+    {
+        endgameManager = FindObjectOfType<EndGameManager>();
+    }
+
     
+
+   
+        
     
     public void WinOk()
     {
@@ -30,8 +39,11 @@ public class BackToSelect : MonoBehaviour
     {
         if (gameData != null)
         {
+           
             gameData.saveData.amountOfLives -= 1;
             gameData.Save();
+
+            Time.timeScale = 1f;
         }
 
         SceneManager.LoadScene(sceneToLoad);

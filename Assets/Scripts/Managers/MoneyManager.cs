@@ -43,7 +43,28 @@ public class MoneyManager : MonoBehaviour
         return amount;
     }
 
+
+    public static void  GoldCount(int NumberOfGold)
+    {
+        Money += NumberOfGold;
+
+        GameData.gameData.saveData.currentMoney = Money;
+    }
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
 
 [System.Serializable]
 public struct Threshold

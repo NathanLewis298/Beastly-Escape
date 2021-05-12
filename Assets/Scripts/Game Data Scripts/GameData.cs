@@ -13,6 +13,8 @@ public class SaveData
 
     public int amountOfLives;
     public int currentMoney;
+
+    public int purchasedTimeUpgrades = 0;
     
 }
 
