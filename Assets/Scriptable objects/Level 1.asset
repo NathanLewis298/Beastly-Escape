@@ -89,21 +89,20 @@ MonoBehaviour:
   - {fileID: 5429796605403366865, guid: 644b44a53d9cc9143b33279e4c6911b4, type: 3}
   - {fileID: 8567683561724440015, guid: 9bf0bf53327f75646a9f04d681fbeaa3, type: 3}
   - {fileID: 7275562178187201295, guid: 23bce9f1bccbc774f94ef1a6060da782, type: 3}
-  - {fileID: 8302931033509283494, guid: 91ea476a31604654aacff1e9cc5d5ea7, type: 3}
   scoreGoals: e2040000d6060000ca080000
   endGameRequirments:
     gameType: 0
     counterValue: 30
   levelGoals:
-  - numberNeeded: 25
-    numberCollected: 3
+  - numberNeeded: 15
+    numberCollected: 16
     goalSprite: {fileID: 21300000, guid: ffc3061db0ffa1e48a05a26791793cf0, type: 3}
     matchValue: White Dot
   - numberNeeded: 15
-    numberCollected: 0
+    numberCollected: 13
     goalSprite: {fileID: 21300000, guid: 3c758524d42fc684a938581d2735ab24, type: 3}
     matchValue: Blue Dark Dot
   - numberNeeded: 18
-    numberCollected: 0
+    numberCollected: 16
     goalSprite: {fileID: 21300000, guid: addeadf756d40a94693adb2c975d7d2d, type: 3}
     matchValue: Breakable
