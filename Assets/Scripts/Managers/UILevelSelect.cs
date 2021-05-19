@@ -10,6 +10,9 @@ public class UILevelSelect : MonoBehaviour
     public Sprite on, off;
 
     public GameObject Page2;
+    public GameObject Page2Text;
+    public GameObject Page1Text;
+
 
     public GameObject shopUIMenu;
     public GameObject shopOpenButton;
@@ -43,11 +46,15 @@ public class UILevelSelect : MonoBehaviour
     public void NextPage()
     {
         Page2.SetActive(true);
+        Page2Text.SetActive(true);
+        Page1Text.SetActive(false);
     }
 
     public void BackPage()
     {
         Page2.SetActive(false);
+        Page2Text.SetActive(false);
+        Page1Text.SetActive(true);
     }
 
     private void Quit()

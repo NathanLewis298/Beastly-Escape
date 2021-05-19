@@ -9,6 +9,8 @@ public class UiManager : MonoBehaviour
     public Image MusicImage;
 
 
+
+
     public Text frontMoneyMenu;
 
 
@@ -16,6 +18,19 @@ public class UiManager : MonoBehaviour
 
     public Text levelText1, levelText2;
     public string prefix = "Level: ";
+
+
+    [Header("SoundEffects")]
+    
+    public Image audioSoundEffectImage;
+
+    public AudioSource[] SoundEffects;
+
+    public Sprite working, notworking;
+
+
+
+
 
     public void MuteMusic()
     {
@@ -39,7 +54,20 @@ public class UiManager : MonoBehaviour
         frontMoneyMenu.text = "$" + GameData.gameData.saveData.currentMoney.ToString();
     }
 
+    public void MuteSoundEffects()
+    {
 
+        foreach (var Sourcy in SoundEffects)
+        {
+            audioSoundEffectImage.sprite = (Sourcy.enabled) ? working : notworking;
+            Sourcy.enabled = !Sourcy.enabled;
+        }
+
+
+       
+
+
+    }
 
 
 }
