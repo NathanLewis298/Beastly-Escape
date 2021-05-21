@@ -4347,8 +4347,8 @@ MonoBehaviour:
   tryAgainPanel: {fileID: 716014659}
   counter: {fileID: 1729426923}
   requirements:
-    gameType: 0
-    counterValue: 30
+    gameType: 1
+    counterValue: 180
   currentCounterValue: 0
 --- !u!114 &1189368254
 MonoBehaviour:
@@ -4872,18 +4872,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGoals:
-  - numberNeeded: 5
+  - numberNeeded: 50
     numberCollected: 0
     goalSprite: {fileID: 21300000, guid: ffc3061db0ffa1e48a05a26791793cf0, type: 3}
     matchValue: White Dot
-  - numberNeeded: 5
+  - numberNeeded: 45
     numberCollected: 0
     goalSprite: {fileID: 21300000, guid: 3c758524d42fc684a938581d2735ab24, type: 3}
     matchValue: Blue Dark Dot
-  - numberNeeded: 18
+  - numberNeeded: 45
     numberCollected: 0
-    goalSprite: {fileID: 21300000, guid: 11a7f70f834c041498371cb2b820c298, type: 3}
-    matchValue: Breakable
+    goalSprite: {fileID: 21300000, guid: 73fa77e09134dc74d9031d0a7f1b5b30, type: 3}
+    matchValue: Pink Dot
   currentGoals: []
   goalPrefab: {fileID: 4488335285123254303, guid: ba6cda12cb942a541b943b1d02cf2e73,
     type: 3}
