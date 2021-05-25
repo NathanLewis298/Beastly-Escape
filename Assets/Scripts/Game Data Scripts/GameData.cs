@@ -11,7 +11,7 @@ public class SaveData
     public bool[] isActive;
     public int[] highScores;
 
-    public int amountOfLives;
+    public int amountOfLives = 5;
     public int currentMoney;
 
     public int purchasedTimeUpgrades = 0;
